@@ -25,7 +25,7 @@
 			}
 			t += 'style="display:none;position:fixed;top:0;left:0;bottom:0;right:0;z-index:-100;width:100%;height:100%;">';
 			for (var n = 0; n < i.settings.types.length; n++) {
-				t += '<source src="video/video.'+i.settings.types[n]+'" />'
+				t += '<source src="video/videobg3.'+i.settings.types[n]+'" />'
 			}
 			t += "bgvideo</video>";
 			i.el.prepend(t);

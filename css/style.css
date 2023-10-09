@@ -312,7 +312,7 @@ body.modal-open {
     overflow: visible;
     background: #1080f2
 }
-}
+
 .spinner {
     opacity: 0.9;
     width: 50px;
@@ -415,7 +415,7 @@ body.modal-open {
 .owl-theme .owl-controls .owl-page {
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 .owl-theme .owl-controls .owl-page span {
     display: block;

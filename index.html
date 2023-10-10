@@ -591,26 +591,6 @@
                             <a class="logo page-scroll" href="#page-top"><img src="img/LOGO-SENA-F.N.png" class="img-none" alt=""></a>
                         </div>
                         <div class="pull-right">
-                            <ul class="footer-nav">
-                                <li class="">
-                                    <a class="page-scroll" href="#services">Sobre Nosotros</a>
-                                </li>
-                                <li class="">
-                                    <a class="page-scroll" href="#features">Características</a>
-                                </li>
-                                <li class="">
-                                    <a class="page-scroll" href="#video">Video</a>
-                                </li>
-                                <li class="">
-                                    <a class="page-scroll" href="#pricing">Planes</a>
-                                </li>
-                                <li class="active">
-                                    <a class="page-scroll" href="#team">Nuestro equipo</a>
-                                </li>
-                                <li class="">
-                                    <a class="page-scroll" href="#clients">Clientes</a>
-                                </li>
-                            </ul>
                             <ul class="footer-secondary-nav">
                                 <li class="">
                                     <a class="page-scroll" href="#"><span class="fa fa-phone"></span>+57-311-687-1320</a>
@@ -629,8 +609,8 @@
                     <div class="lower-footer">
                         <div class="pull-left">
                             <span>© 2023 MIGGO SOLUTIONS S.A.S. Todos los derechos reservados </span>
-                            <a href="politica.html"> Terminos y condiciones </a>
-                            <a href="#"> Politica de privacidad </a>
+                            <a href="#" data-toggle="modal" data-target="#terminos" id="modalTerminos" onclick="showTerms();"> Términos y condiciones </a>
+                            <a href="#" data-toggle="modal" data-target="#politicas" id="modalPoliticas" onclick="showPolitics();"> Política de privacidad </a>
                         </div>
                         <div class="pull-right">
                             <a href="https://www.facebook.com/miggosolutions" target="_blank"><span class="fa fa-facebook"></span></a>
@@ -644,6 +624,39 @@
                 </div>
             </div>
         </footer>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="politicas" tabindex="-1" role="dialog" aria-labelledby="politicas" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="politicasPriv">Políticas de privacidad</h5>
+                </div>
+                <div class="modal-body" id="politic-content">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="terminos" tabindex="-1" role="dialog" aria-labelledby="terminos" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h3 class="modal-title" id="terminosCond"><b>Términos y condiciones</b></h3>
+                    </div>
+                    <div class="modal-body" id="terms-content">                    
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- END FOOTER -->
         <!-- SCRIPTS -->
         <!-- jQuery & Bootstrap -->
@@ -667,5 +680,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMNP7H2ZA9QuLJa999M93721_RUU9aYMM"></script>
         <!-- custom script -->
         <script src="js/scripts.js"></script>
+        <script src="js/modalterminos.js"></script>
+        <script src="js/modalpoliticas.js"></script>
     </body>
 </html>
